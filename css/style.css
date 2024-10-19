@@ -201,7 +201,9 @@ p {
 
 /* Button "Call me back" */
 .btn {
-    padding: 11px 20px;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 15px 45px;
 
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
@@ -210,6 +212,7 @@ p {
     font-weight: 700;
     text-align: center;
     cursor: pointer;
+    text-decoration: none;
 
     background: black;
     border: 0;
@@ -232,11 +235,29 @@ p {
     padding: 60px 0;
 }
 
+.section--map {
+    background: url("../img/clients/map.svg") no-repeat left 30px top 130px;
+}
+
+.section__title {
+    margin-bottom: 40px;
+
+    font-family: "Lato", sans-serif;
+    font-size: 45px;
+    line-height: 1.2;
+    color: #2C2C2C;
+    font-weight: 900;
+}
+
+.section__title span {
+    color: #004AF2;
+}
+
 /* Services */
 .services {
     display: flex;
     flex-wrap: wrap;
-    padding: 30px 0  70px;
+    padding: 30px 0 70px;
     position: relative;
 
     background-color: white;
@@ -311,4 +332,111 @@ p {
 .services__link:hover:after {
     background-color: #FF3E2F;
     width: 100%;
+}
+
+/* Clients */
+
+.clients {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.clients__logos {
+    width: 60%;
+}
+
+.clients__reviews {
+    width: 40%;
+}
+
+.clients__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.clients__list li {
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+.clients-love {
+    display: inline-block;
+    padding-top: 5px;
+    margin-left: 40px;
+    min-height: 48px;
+
+    background: url("../img/clients/heart.svg")
+    no-repeat left 19px top;
+
+    font-size: 18px;
+    color: #464646;
+}
+
+/* Reviews */
+.reviews {
+    position: relative;
+}
+
+.reviews:before {
+    content: "";
+    display: block;
+    width: 92px;
+    height: 126px;
+
+    background:
+            url("../img/clients/lines.svg")
+            no-repeat;
+
+    position: absolute;
+    top: -15px;
+    left: 2px;
+    z-index: 1;
+}
+
+.reviews__header {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.reviews__header--content {
+    font-family: "Lato", sans-serif;
+    flex-grow: 1;
+    padding-left: 20px;
+}
+
+.reviews__photo {
+    width: 100px;
+    height: 100px;
+
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+}
+
+.reviews__name {
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    color: #2C2C2C;
+    font-weight: 900;
+}
+
+.reviews__company {
+    font-size: 15px;
+    color: #2C2C2C;
+}
+
+.reviews__content {
+    color: #585858;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.reviews__content p {
+    text-indent: 20px;
+    margin-bottom: 20px;
 }
