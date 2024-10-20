@@ -27,6 +27,12 @@ p {
     margin: 0 0 10px;
 }
 
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 /* Container */
 .container {
     width: 100%;
@@ -439,4 +445,97 @@ p {
 .reviews__content p {
     text-indent: 20px;
     margin-bottom: 20px;
+}
+
+/* Benefits */
+.benefits {
+    display: flex;
+}
+
+.benefits__col {
+    display: flex;
+    width: 50%;
+}
+
+.benefits__col-way {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 50px;
+    position: relative;
+}
+
+.benefits__col-way::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    bottom: 50px;
+    left: 20px;
+    transform: translateX(-50%);
+
+    width: 2px; /* Ширина лінії */
+    background-image: linear-gradient(to bottom, #ffffff 50%, #A5A5A5 50%);
+    background-size: 2px 40px;
+    background-repeat: repeat-y;
+
+    /* Лінія не повинна торкатися контейнерів */
+    z-index: -1; /* Щоб лінія була позаду дочірніх елементів */
+}
+
+.benefits__pin {
+    padding-left: 8px;
+    padding-bottom: 10px;
+}
+
+.benefits-list {
+    position: relative;
+    max-width: 370px;
+    /*padding-left: 50px;*/
+}
+
+/*.benefits-list:before,*/
+/*.benefits-list:after {*/
+/*    content: "";*/
+/*    display: block;*/
+/*    width: 26px;*/
+/*    height: 36px;*/
+
+/*    background-color: white;*/
+/*    background-repeat: no-repeat;*/
+
+/*    position: absolute;*/
+/*    left: 0;*/
+/*    z-index: 1;*/
+/*}*/
+
+/*.benefits-list:before {*/
+/*    background: url("../img/benefits/pin-start.svg")*/
+/*    no-repeat;*/
+/*    top: -7px;*/
+/*}*/
+
+/*.benefits-list:after {*/
+/*    background: url("../img/benefits/pin-end.svg")*/
+/*    no-repeat;*/
+/*    bottom: -5px;*/
+/*}*/
+
+.benefits-list__item:not(:last-child) {
+    margin-bottom: 35px;
+}
+
+.benefits-list__title {
+    margin-bottom: 10px;
+
+    font-family: "Lato", sans-serif;
+    font-size: 21px;
+    line-height: 1.2;
+    color: #2C2C2C;
+    font-weight: 900;
+}
+
+.benefits-list__text {
+    font-size: 15px;
+    line-height: 1.4;
+    color: #585858;
 }
