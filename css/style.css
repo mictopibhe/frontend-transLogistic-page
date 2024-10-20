@@ -3,7 +3,7 @@ body {
 
     font-family: "PT Sans", serif;
     font-size: 15px;
-    line-height: 1.5;
+    line-height: 1.4;
     color: #585858;
 }
 
@@ -155,7 +155,6 @@ p {
 .request-form__text {
     font-size: 15px;
     color: white;
-    line-height: 1.4;
 }
 
 .request-form__content {
@@ -245,6 +244,10 @@ p {
     background: url("../img/clients/map.svg") no-repeat left 30px top 130px;
 }
 
+.section--gray {
+    background-color: #F9F9F9;
+}
+
 .section__title {
     margin-bottom: 40px;
 
@@ -304,7 +307,6 @@ p {
 .services_text {
     margin-bottom: 20px;
     font-size: 15px;
-    line-height: 1.4;
     color: #585858;
 }
 
@@ -493,33 +495,6 @@ p {
     /*padding-left: 50px;*/
 }
 
-/*.benefits-list:before,*/
-/*.benefits-list:after {*/
-/*    content: "";*/
-/*    display: block;*/
-/*    width: 26px;*/
-/*    height: 36px;*/
-
-/*    background-color: white;*/
-/*    background-repeat: no-repeat;*/
-
-/*    position: absolute;*/
-/*    left: 0;*/
-/*    z-index: 1;*/
-/*}*/
-
-/*.benefits-list:before {*/
-/*    background: url("../img/benefits/pin-start.svg")*/
-/*    no-repeat;*/
-/*    top: -7px;*/
-/*}*/
-
-/*.benefits-list:after {*/
-/*    background: url("../img/benefits/pin-end.svg")*/
-/*    no-repeat;*/
-/*    bottom: -5px;*/
-/*}*/
-
 .benefits-list__item:not(:last-child) {
     margin-bottom: 35px;
 }
@@ -536,6 +511,66 @@ p {
 
 .benefits-list__text {
     font-size: 15px;
-    line-height: 1.4;
     color: #585858;
+}
+
+/* Team */
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.team__col {
+    width: 33.333%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.team__photo {
+    margin-bottom: 13px;
+    box-shadow: 10px 5px 13px
+    rgba(0, 0, 0, .16);
+}
+
+.team__name {
+    margin-bottom: 5px;
+
+    font-family: "Lato", sans-serif;
+    color: #2C2C2C;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 900;
+}
+
+.team__prof {
+    margin-bottom: 11px;
+    font-size: 15px;
+    color: #585858;
+}
+
+.team_contacts {
+    font-size: 14px;
+    line-height: 1.2;
+    color: #585858;
+}
+
+.team_contacts li {
+    margin-bottom: 9px;
+}
+
+.team_contacts a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.team_contacts a:hover {
+    text-decoration: underline;
+}
+
+.team_contacts-icon {
+    width: 16px;
+    height: auto;
+    margin-right: 7px;
 }
